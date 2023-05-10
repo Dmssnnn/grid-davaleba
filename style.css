@@ -1,0 +1,70 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 10px;
+    background-color: red;
+    padding: 10px;
+    grid-template-areas: 
+    "masonry1 responsive overlap overlap"
+    "masonry1 fluid explictly negative"
+    "flexible masonry2 explictly masonry3"
+    "dom masonry2 tracks tracks "; 
+}
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px ;
+    font-size: 30px;
+}
+
+.item1 {
+    background-color: blue;
+    grid-area: masonry1;
+}
+.item2 {
+    grid-area: responsive;
+}
+.item3 {
+    grid-area: overlap;
+}
+.item4 {
+    grid-area: overlap;
+}
+.item5 {
+    grid-area: masonry1;
+}
+.item6 {
+    grid-area: fluid;
+}
+.item7 {
+    grid-area: explictly;
+}
+.item8 {
+    grid-area: negative;
+}
+.item9 {
+    grid-area: flexible;
+}
+.item10 {
+    grid-area:masonry2;
+}
+.item11 {
+    grid-area: explictly;
+}
+.item12 {
+    grid-area: masonry3;
+}
+.item13 {
+    grid-area: dom;
+}
+.item14 {
+    grid-area: masonry2;
+}
+.item15 {
+    grid-area: tracks;
+}
+.item16 {
+    grid-area: tracks;
+}
